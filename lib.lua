@@ -13,7 +13,7 @@ function library:Create(name)
 	local UIPadding = Instance.new("UIPadding")
 	local UIListLayout = Instance.new("UIListLayout")
 	PinkSexUiLib.Name = name
-	PinkSexUiLib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	PinkSexUiLib.Parent = game.CoreGui
 	UiShadow.Name = "UiShadow"
 	UiShadow.Parent = PinkSexUiLib
 	UiShadow.BackgroundColor3 = Color3.fromRGB(22, 37, 17)
