@@ -1,4 +1,4 @@
 local games = {
- ["2986677229"] = {Name = "Giant Simulator", Script = "Simulators/GiantSim.lua",ID = 2986677229}
+ ["4032944086"] = {Name = "Workout Island", Script = "Simulators/Workout_Island.lua",ID = 4032944086}
 }
 return games;
