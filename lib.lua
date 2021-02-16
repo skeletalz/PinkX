@@ -1,5 +1,5 @@
 for i,v in pairs(game.CoreGui:GetChildren()) do if v:FindFirstChild("UiShadow") then v:Destroy() end end
-loadstring(game:HttpGet('https://pastebin.com/raw/3c4ngd7M'))('PinkX')
+loadstring(game:HttpGet('https://dogix.wtf/scripts/libraries/discord.lua'))('PinkX')
 local library = {}
 
 function library:Create(name)
@@ -39,7 +39,7 @@ function library:Create(name)
 	Main.ScaleType = Enum.ScaleType.Slice
 	Main.SliceCenter = Rect.new(100, 100, 100, 100)
 	Main.SliceScale = 0.060
-
+    Main.ClipsDescendants = true
 	Top.Name = "Top"
 	Top.Parent = Main
 	Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -72,6 +72,7 @@ function library:Create(name)
 							while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
 								pcall(function()
 									frame.Parent:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X, 0, mouse.Y - objectPosition.Y), 'Out', 'Linear', 0.1, true);
+									UiShadow:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X, 0, mouse.Y - objectPosition.Y), 'Out', 'Linear', 0.1, true);
 								end)
 							end
 						end
@@ -304,7 +305,7 @@ function library:Create(name)
 				BG_2.SliceScale = 0.060
 			end
 			function sect:Toggle(name3,callback)
-				callback = callback or function() end
+				local callback = callback or function(h) end
 				local Toggle = Instance.new("TextButton")
 				local V1 = Instance.new("ImageButton")
 				local Circle = Instance.new("ImageLabel")
@@ -878,6 +879,7 @@ function library:Create(name)
 		end)
 		script.Parent.MouseButton1Click:Connect(function()
 			tween(Main,0.3,{Size=UDim2.new(0,0,0,0)})
+			tween(UiShadow,0.3,{Size=UDim2.new(0,0,0,0)})
 		end)
 	end
 	coroutine.wrap(EOVOOM_fake_script)()
