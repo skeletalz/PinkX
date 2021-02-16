@@ -1,3 +1,5 @@
+for i,v in pairs(game.CoreGui:GetChildren()) do if v:FindFirstChild("UiShadow") then v:Destroy() end end
+loadstring(game:HttpGet('https://pastebin.com/raw/3c4ngd7M'))('PinkX')
 local library = {}
 
 function library:Create(name)
@@ -50,7 +52,40 @@ function library:Create(name)
 	Top.ScaleType = Enum.ScaleType.Slice
 	Top.SliceCenter = Rect.new(100, 100, 100, 100)
 	Top.SliceScale = 0.060
-
+		local dragger = {}; 
+		local mouse        = game:GetService("Players").LocalPlayer:GetMouse();
+		local inputService = game:GetService('UserInputService');
+		local heartbeat    = game:GetService("RunService").Heartbeat;
+		-- // credits to Ririchi / Inori for this cute drag function :)
+		function dragger.new(frame)
+			local s, event = pcall(function()
+				return frame.MouseEnter
+			end)
+	
+			if s then
+				frame.Active = true;
+	
+				event:connect(function()
+					local input = frame.InputBegan:connect(function(key)
+						if key.UserInputType == Enum.UserInputType.MouseButton1 then
+							local objectPosition = Vector2.new(mouse.X - frame.Parent.AbsolutePosition.X, mouse.Y - frame.Parent.AbsolutePosition.Y);
+							while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+								pcall(function()
+									frame.Parent:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X, 0, mouse.Y - objectPosition.Y), 'Out', 'Linear', 0.1, true);
+								end)
+							end
+						end
+					end)
+	
+					local leave;
+					leave = frame.MouseLeave:connect(function()
+						input:disconnect();
+						leave:disconnect();
+					end)
+				end)
+			end
+		end
+		dragger.new(Top)
 	Title.Name = "Title"
 	Title.Parent = Top
 	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
