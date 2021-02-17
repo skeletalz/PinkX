@@ -575,6 +575,7 @@ function library:Create(name)
 				Button.Font = Enum.Font.GothamBold
 				Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Button.TextSize = 14.000
+				Button.Text = name
 				rap.Size = rap.Size + UDim2.new(0,0,0,38)
 				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,38)
 				Category_2.CanvasSize = Category_2.CanvasSize + UDim2.new(0,0,0,38)
