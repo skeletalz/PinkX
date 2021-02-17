@@ -274,8 +274,8 @@ function library:Create(name)
 			function sect:Label(name3)
 				local Label = Instance.new("TextLabel")
 				local BG_2 = Instance.new("ImageLabel")
-				rap.Size = rap.Size + UDim2.new(0,0,0,38)
-				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,38)
+				rap.Size = rap.Size + UDim2.new(0,0,0,40)
+				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,40)
 				Label.Name = name3
 				Label.Parent = Frame_2
 				Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -311,8 +311,8 @@ function library:Create(name)
 				local Circle = Instance.new("ImageLabel")
 				local Bar = Instance.new("ImageLabel")
 				local BG_3 = Instance.new("ImageLabel")
-				rap.Size = rap.Size + UDim2.new(0,0,0,38)
-				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,38)
+				rap.Size = rap.Size + UDim2.new(0,0,0,40)
+				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,40)
 				Category_2.CanvasSize = Category_2.CanvasSize + UDim2.new(0,0,0,38)
 				Toggle.Name = name3
 				Toggle.Parent = Frame_2
@@ -440,9 +440,9 @@ function library:Create(name)
 				local In = Instance.new("TextButton")
 				local Inner = Instance.new("TextButton")
 				local Number = Instance.new("TextLabel")
-				rap.Size = rap.Size + UDim2.new(0,0,0,58)
-				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,58)
-				Category_2.CanvasSize = Category_2.CanvasSize + UDim2.new(0,0,0,38)
+				rap.Size = rap.Size + UDim2.new(0,0,0,60)
+				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,60)
+				Category_2.CanvasSize = Category_2.CanvasSize + UDim2.new(0,0,0,58)
 				Slider.Name = name3
 				Slider.Parent = Frame_2
 				Slider.Active = false
@@ -576,8 +576,8 @@ function library:Create(name)
 				Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Button.TextSize = 14.000
 				Button.Text = name
-				rap.Size = rap.Size + UDim2.new(0,0,0,38)
-				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,38)
+				rap.Size = rap.Size + UDim2.new(0,0,0,40)
+				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,40)
 				Category_2.CanvasSize = Category_2.CanvasSize + UDim2.new(0,0,0,38)
 				BG_5.Name = "BG"
 				BG_5.Parent = Button
@@ -635,8 +635,8 @@ function library:Create(name)
 				local UIListLayout_3 = Instance.new("UIListLayout")
 				local UIPadding_3 = Instance.new("UIPadding")
 				local ImageButton = Instance.new("ImageButton")
-				rap.Size = rap.Size + UDim2.new(0,0,0,38)
-				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,38)
+				rap.Size = rap.Size + UDim2.new(0,0,0,40)
+				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,40)
 				Category_2.CanvasSize = Category_2.CanvasSize + UDim2.new(0,0,0,38)
 				Dropdown.Name = name3
 				Dropdown.Parent = Frame_2
@@ -794,8 +794,8 @@ function library:Create(name)
 				TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
-				rap.Size = rap.Size + UDim2.new(0,0,0,38)
-				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,38)
+				rap.Size = rap.Size + UDim2.new(0,0,0,40)
+				Frame_2.Size = Frame_2.Size + UDim2.new(0,0,0,40)
 				Category_2.CanvasSize = Category_2.CanvasSize + UDim2.new(0,0,0,38)
 				BG_8.Name = "BG"
 				BG_8.Parent = TextBox
