@@ -712,7 +712,7 @@ function library:Create(name)
 					Button_2.Font = Enum.Font.GothamBold
 					Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 					Button_2.TextSize = 14.000
-
+ScrollingFrame.CanvasSize =ScrollingFrame.CanvasSize + UDim2.new(0, 0, 30, 0)
 					BG_7.Name = "BG"
 					BG_7.Parent = Button_2
 					BG_7.Active = true
@@ -728,7 +728,6 @@ function library:Create(name)
 					BG_7.ScaleType = Enum.ScaleType.Slice
 					BG_7.SliceCenter = Rect.new(100, 100, 100, 100)
 					BG_7.SliceScale = 0.060
-					nums=nums+1
 					Button_2.MouseButton1Click:Connect(function()
 						H = false
 						tween(ScrollingFrame,0.3,{Size=UDim2.new(1,0,0,0)})
@@ -744,6 +743,9 @@ function library:Create(name)
 					Button_2.MouseLeave:Connect(function()
 						tween(Button_2.BG,0.3,{ImageColor3 = Color3.fromRGB(190, 86, 176)})
 					end)
+				end
+				for i,v in pairs(args) do
+					nums=nums+1
 				end
 				local httphentai = 12
 				if nums > 4 then
