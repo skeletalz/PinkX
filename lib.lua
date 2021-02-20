@@ -189,7 +189,7 @@ function library:Create(name)
 		Category_2.Size = UDim2.new(1.02430844, 0, 1, 0)
 		Category_2.ZIndex = 5
 		Category_2.ScrollBarThickness = 6
-		Category_2.CanvasSize = UDim2.new(0,0,1,0)
+		Category_2.CanvasSize = UDim2.new(0,0,0,0)
 		Category_2.Visible = false
 		local UIPadding = Instance.new("UIPadding")
 		local UIListLayout = Instance.new("UIListLayout")
