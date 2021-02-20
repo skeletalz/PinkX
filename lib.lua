@@ -735,6 +735,7 @@ function library:Create(name)
 						tween(ImageButton,0.3,{Rotation=0})
 						old = Button_2.Text
 						Dropdown.Text = "  "..name3..":  "..old
+						callback(v)
 						wait(0.3)tween(Button_2,0.3,{TextColor3=Color3.fromRGB(255, 255, 255)})
 					end)
 					Button_2.MouseEnter:Connect(function()
