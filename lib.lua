@@ -1,5 +1,4 @@
 for i,v in pairs(game.CoreGui:GetChildren()) do if v:FindFirstChild("UiShadow") then v:Destroy() end end
-loadstring(game:HttpGet('https://dogix.wtf/scripts/libraries/discord.lua'))('PinkX')
 local library = {}
 
 function library:Create(name)
